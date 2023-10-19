@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Job agency</title>
+    <link rel="icon" type="image/x-icon" href="https://play-lh.googleusercontent.com/ep0woft94xCqIbCi8QTZ93joLko9qM4W_flGlfATpy2l8IwLnJ8y4Vb60qwUo3FuU0I">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        #liner{
+            background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(166,85,191,1) 3%, rgba(0,212,255,1) 100%);
+        }
+        #link:hover{
+            color: skyblue;
+            background-color: black;
+        }
+       @media (max-width:400px) {
+        header{
+            flex-direction: column;
+        }
+        @media (max-width: 400px) {
+            nav{
+                display: flex;
+                flex-direction: column;
+            }
+        }
+        @media (max-width: 400px) {
+            
+            .search{
+                display: flex;
+                flex-direction: column;
+            }
+        }
+        @media(max-width:400px){
+            .Card-container{
+                flex-direction: column;
+                justify-content: center;
+                flex-wrap:wrap;
+                width: 800px;
+            }
+            
+        }
+       }
+    </style>
+</head>
+<body style="background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(191,85,112,1) 46%, rgba(0,212,255,1) 100%);">
+    <header id="liner">
+        <div class="logo">
+            <img src="data:image/png;base64,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" alt="logo g">
+        </div>
+        <nav class="navi">
+            <a href="" id="link">Jobs</a>
+            <a href="" id="link">Courses</a>
+            <a href="" id="link">Career Advice</a>
+            <a href="" id="link">Recruiting? Post a job</a>
+        </nav>
+    </header>
+        <div class="search">
+            <h3>What</h3><input type="text" placeholder="e.g. Software Developer">
+            <h3> Where</h3><input type="text" placeholder="Town or Postal code"> 
+            <button>Search Job</button>
+        </div>
+        <h2>
+            207,617 Jobs & Vacancies
+        </h2>
+        <!-- <div class="job">
+            <div class="job1" ><a href="" style="font-size: 150%;">School Receptionist Term Time Only</a>
+                
+            </div>
+            <div class="job2"><a href="">Electrician</a></div>
+            <div class="job3"><a href="">Area Manager</a></div>
+            <div class="job4"><a href="">Warehouse Operative - Night Shift</a></div>
+            <div class="job5"><a href="">Receptionist/Administrator</a></div>
+            <div class="job6"><a href="">Lab Administrator</a></div>
+            <div  class="job7"><a href="">Sales Administrator - Part Time</a></div>
+        </div> -->
+        <section class="Card-container">
+            <article class="Card">
+                <div class="Card-Head"><a href="" style="font-size: 30px; text-decoration:none; color: #1E1EF0">School Receptionist Term Time Only</a> <br><span style="color: azure;">21 September by </span><a href="">The Aurora Group</a></div>
+                <div class="Card-Body">
+                    <i class="fa fa-gbp" style="color: azure;"> Competitive salary</i>
+                    <i class="fa fa-shopping-bag" style="color: azure;"> Permanent, full-time</i>
+                    <i class="fa fa-map-marker" style="color: azure;"> Wilmslow</i>
+                </div>
+                
+                <div class="Caard-Foot">
+                    <p style="color: azure;">Overview and Responsibilities School Receptionist Location : Wilmslow Contract Type : Full-time, Permanent Hours : 37.5 hours per week, 8.30 – 15.30 M...</p>
+                </div>
+            </article>
+            <article class="Card">
+                <div class="Card-Head"><a href="" style="font-size: 30px; text-decoration:none; color: #1E1EF0">Electrician</a> <br><span style="color: azure;">20 September by </span><a href="">PHS Group Limited</a></div>
+                <div class="Card-Body">
+                    <i class="fa fa-gbp" style="color: azure;"> £32,760 - £34,944 per annum</i>
+                    <i class="fa fa-shopping-bag" style="color: azure;"> Permanent, full-time</i>
+                    <i class="fa fa-map-marker" style="color: azure;"> Nottingham</i>
+                </div>
+                
+                <div class="Caard-Foot">
+                    <p style="color: azure;">Electrician – Nottingham Up to 47,600 earnings, plus company vehicle and equipment We are expanding our work force and looking for experienced electri...</p>
+                </div>
+            </article>
+            <article class="Card">
+                <div class="Card-Head"><a href="" style="font-size: 30px; text-decoration:none; color: #1E1EF0">Area Manager</a> <br><span style="color: azure;">3 hrs ago by </span><a href="">First Milk</a></div>
+                <div class="Card-Body">
+                    <i class="fa fa-gbp" style="color: azure;"> Competitive salary</i>
+                    <i class="fa fa-shopping-bag" style="color: azure;"> Permanent, full-time</i>
+                    <i class="fa fa-map-marker" style="color: azure;"> Southampton</i>
+                </div>
+                
+                <div class="Caard-Foot">
+                    <p style="color: azure;">Area Manager Home-based (with travel across Southern England) About Us First Milk is a wholly British farmer-owned dairy co-operative, dedicated to driving forward regenerative and nature friendly farming. Our 700-strong community of family farms are...</p>
+                </div>
+            </article>
+            <article class="Card">
+                <div class="Card-Head"><a href="" style="font-size: 30px; text-decoration:none; color: #1E1EF0">Warehouse Operative - Night Shift</a> <br><span style="color: azure;">5 hrs ago by </span><a href="">MTrec Recruitment</a></div>
+                <div class="Card-Body">
+                    <i class="fa fa-gbp" style="color: azure;"> £10.42 - £11.42 per hour</i>
+                    <i class="fa fa-shopping-bag" style="color: azure;"> Temporary, full-time</i>
+                    <i class="fa fa-map-marker" style="color: azure;"> Seaham</i>
+                </div>
+                
+                <div class="Caard-Foot">
+                    <p style="color: azure;">Rewards and Benefits on Offer: Competitive hourly rates: 10.42 per hour for the Back shift and 11.42 per hour for the Night shift. Opportunity to work in the thriving logistics industry. Full-time employment with the potential for career advancement ...</p>
+                </div>
+            </article>
+            <article class="Card">
+                <div class="Card-Head"><a href="" style="font-size: 30px; text-decoration:none; color: #1E1EF0">Receptionist/Administrator</a> <br><span style="color: azure;">5 hrs ago by</span><a href="">Burton Bolton & Rose Recruitment Services Limited</a></div>
+                <div class="Card-Body">
+                    <i class="fa fa-gbp" style="color: azure;"> £24,000 per annum</i>
+                    <i class="fa fa-shopping-bag" style="color: azure;"> Permanent, full-time</i>
+                    <i class="fa fa-map-marker" style="color: azure;"> Uxbridge</i>
+                </div>
+                
+                <div class="Caard-Foot">
+                    <p style="color: azure;">Receptionist/Administrator Uxbridge, Middlesex 24,000 Pension Parking If you are seeking a Reception position with a high administration content then this position really is going to be perfect for you. No two days will be the same in this role. Some...</p>
+                </div>
+            </article>
+            <article class="Card">
+                <div class="Card-Head"><a href="" style="font-size: 30px; text-decoration:none; color: #1E1EF0">Field Service Technician</a> <br><span style="color: azure;">5 hrs ago by</span><a href="">Reed</a></div>
+                <div class="Card-Body">
+                    <i class="fa fa-gbp" style="color: azure;"> £28,500 per annum, inc benefi</i>
+                    <i class="fa fa-shopping-bag" style="color: azure;"> Permanent, full-time</i>
+                    <i class="fa fa-map-marker" style="color: azure;"> London</i>
+                </div>
+                
+                <div class="Caard-Foot">
+                    <p style="color: azure;">Portable Fire Extinguisher Technician I'm currently representing a client who is looking for Fire Extinguisher Technician in South London, Slough, and Oxfordshire. YOU DO NOT NEED TO BE BAFE QUALIFIED. Requirements: Carrying out site surveys, install...</p>
+                </div>
+            </article>
+            <article class="Card">
+                <div class="Card-Head"><a href="" style="font-size: 30px; text-decoration:none; color: #1E1EF0">Accounts Assistant-Team Leader</a> <br><span style="color: azure;">5 hrs ago by </span><a href="">Hays Specialist Recruitment Limited</a></div>
+                <div class="Card-Body">
+                    <i class="fa fa-gbp" style="color: azure;"> £32,000 - £36,000 per annum</i>
+                    <i class="fa fa-shopping-bag" style="color: azure;"> Permanent, full-time</i>
+                    <i class="fa fa-map-marker" style="color: azure;"> Alderley Edge</i>
+                </div>
+                
+                <div class="Caard-Foot">
+                    <p style="color: azure;">Overview and Responsibilities School Receptionist Location : Wilmslow Contract Type : Full-time, Permanent Hours : 37.5 hours per week, 8.30 – 15.30 M...</p>
+                </div>
+            </article>
+            <article class="Card">
+                <div class="Card-Head"><a href="" style="font-size: 30px; text-decoration:none; color: #1E1EF0">Conveyancing Paralegal</a> <br><span style="color: azure;">5 hrs ago by </span><a href="">Cross Resourcing</a></div>
+                <div class="Card-Body">
+                    <i class="fa fa-gbp" style="color: azure;"> £28,000 - £32,000 per annum</i>
+                    <i class="fa fa-shopping-bag" style="color: azure;"> Permanent, full-time</i>
+                    <i class="fa fa-map-marker" style="color: azure;"> Edinburgh</i>
+                </div>
+                
+                <div class="Caard-Foot">
+                    <p style="color: azure;">Are you an experienced Conveyancing Paralegal looking to join a well known, high street firm? We are excited to be working in partnership with our leading client, a small boutique Firm in Edinburgh who are looking to recruit several Conveyancing Para...</p>
+                </div>
+            </article>
+            
+        </section>
+    </body>
+</html>

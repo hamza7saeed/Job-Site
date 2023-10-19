@@ -1,0 +1,76 @@
+
+header{
+    /* background-color: rgb(74, 50, 118); */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 0px 5px 5px 10px black; 
+}
+img{
+    height: 50px;
+}
+.navi > a{
+    text-decoration:none;
+   color: azure;
+   background-color:#00d4ff;
+font-size: 110%;
+}
+.search{
+    display: flex;
+    color: azure;
+    align-items: center;
+    justify-content: space-evenly;
+    border: 2px solid whitesmoke;
+   margin-top: 20px;
+
+
+}
+.search > input{
+    flex: 0.6;
+    background-color: transparent;
+}
+button{
+    background-color:#9F0885;
+    font-size: 17px;
+}
+h2{
+    color: azure;
+}
+.job{
+    margin-top: 20px;
+    display: flex;
+    text-align: center;
+    flex-direction: column;    
+}
+/* .job1 > a {
+border: 1px solid white;
+box-shadow: 0px 0px 10px 0px pink;
+color:#181A9A;
+text-decoration: none;
+display: flex;
+text-align: center;
+align-items: center;
+height: 100px;
+color:azure;
+padding-left:38% ;
+} */
+.Card-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    box-shadow: #CC376D;
+}
+.Card{
+    background-color: #CC376D;
+    border: 1px solid white ;
+    width: 50%;
+
+}
+.Card-Body{
+margin-top: 15px;
+display: flex;
+justify-content:space-evenly;
+flex-direction: row;
+
+}
